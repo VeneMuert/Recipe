@@ -1,6 +1,5 @@
 import { defineConfig } from 'astro/config'
 
 export default defineConfig({
-  site: 'https://VeneMuert.github.io',
-  base: '/Recipe',
+  site: 'https://VeneMuert.github.io',  
 })
