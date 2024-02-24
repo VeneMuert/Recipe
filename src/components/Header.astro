@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import testimage from "/public/image-omelette.jpeg";
+---
+
+    <div>
+    <Image src={testimage} loading='eager' alt="omellete" />
+    <h1>Simple Omelette Recipe</h1>
+    <h2>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.</h2>
+    </div>
+
+<style>
+    h1{
+        font-family: 'Young Serif';
+        font-weight: 500;
+        font-size: 1.60rem;        
+        width: 90%;
+        color:var(--DarkCharcoal)
+        
+    }
+    h2{
+        font-family: 'Outfit';
+        font-weight: 400;
+        font-size: 0.92rem;        
+        width: 90%;
+        color: var(--WengeBrown);
+    }   
+    img{
+        width: 100%;
+        height: auto;             
+    }
+    div{
+        display: flex;
+        flex-direction: column;        
+        align-items: center;
+    }
+   @media screen and (min-width: 1440px) {
+    img{
+        width: 90%;
+        margin: 2rem 2rem 0;
+        height: auto;
+        border-radius: 1.315rem;
+    }
+    h1{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 1rem;
+    }    
+   }
+</style>

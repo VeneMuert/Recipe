@@ -1,0 +1,18 @@
+---
+const { title }=Astro.props
+---
+<section>
+    {title && <h2>{title}</h2>}
+    <slot />
+</section>
+<style>
+    section{
+        padding-left: 1rem;
+        width: 90%;
+    }
+    h2{
+        font-family: 'Young Serif';
+        font-weight: 400;
+        color:var(--Nutmeg)
+    } 
+</style>

@@ -1,12 +1,32 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Preparation from '../components/Section/Preparation.astro';
+import Header from '../components/Header.astro'
+import Nutrition from '../components/Section/Nutrition.astro'
+import Ingredients from '../components/Section/Ingredients.astro';
+import Instructions from '../components/Section/Instructions.astro';
 ---
 
-<Layout title="Frontend || Recipe">
-	<main>	
-			
+<Layout title="Frontend Mentor | Recipe page">
+	<main>
+		<Header/>
+		<Preparation/>
+		<Ingredients/>
+		<hr/>
+		<Instructions/>
+		<hr/>		
+		<Nutrition/>
 	</main>
 </Layout>
-
+<style>
+	main{
+		padding-bottom: 1rem;
+		margin: 0;
+	}
+	hr{
+		width: 90%;
+		height: 1px;
+		color:var(--LightGrey)
+	}
+</style>
 
