@@ -1,5 +1,7 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig, passthroughImageService } from 'astro/config'
 
 export default defineConfig({
-  site: 'https://VeneMuert.github.io',  
+   image:{
+    service:passthroughImageService(),
+   },
 })
