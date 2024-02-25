@@ -13,6 +13,7 @@ const { title } = Astro.props;
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>		
 		<link rel="icon" sizes="32x32" href="/Recipe/favicon-32x32.png" />
+
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -33,6 +34,16 @@ const { title } = Astro.props;
 		--WengeBrown: hsl(30, 10%, 34%);
 		--DarkCharcoal: hsl(24, 5%, 18%);
 	}
+	@font-face {
+  font-family: 'Outfit';
+  src: url('public/fonts/outfit/Outfit-VariableFont_wght.ttf') format('ttf')      
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url('public/fonts/young-serif/YoungSerif-Regular.ttf') format('ttf')
+       
+}
 	
 	*,*::after,*::before{
 		box-sizing: border-box;
@@ -65,7 +76,7 @@ const { title } = Astro.props;
 	}
         body{
 			width: 50%;
-			margin: 5rem auto;
+			margin: 6rem auto;
 			background: var(--White);
 			border-radius: 1.315rem;
 		}
